@@ -107,3 +107,38 @@
     padding-top: 4em;
     padding-bottom: 3em;
   }
+
+  .intro {
+    padding-top: 4em;
+    display: flex;
+  }
+  .intro .intro-img {
+    width: 25%;
+
+    border-radius: 1em;
+  }
+  .intro .intro-content {
+    width: 75%;
+    padding-left: 1em;
+  }
+
+  section:nth-child(2n) {
+    border-top-left-radius: 2.5em;
+    border-bottom-right-radius: 2.55em;
+    background-color: #e6e3bb;
+  }
+  .section-img {
+    width: 50%;
+    border-radius: 1em;
+  }
+  .section-with-img {
+    display: flex;
+  }
+  .section-content {
+    width: 50%;
+    padding-right: 1em;
+  }
+  .padding-block {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
