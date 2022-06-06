@@ -18,3 +18,60 @@
   .content {
     background-color: #fdffe3;
   }
+
+  .header {
+    top: 0;
+    left: 0;
+    position: sticky;
+
+    width: 100%;
+
+    min-height: 3em;
+    background-color: #c6491a;
+  }
+  .menu {
+    padding: 1em;
+    margin-left: 10%;
+    margin-top: 0;
+    margin-right: 10%;
+    margin-bottom: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    list-style: none;
+  }
+  .menu .menu-item {
+    text-transform: uppercase;
+  }
+  .menu .menu-item a {
+    color: #fff;
+    transition: 0.25s;
+  }
+  .menu .menu-item a::after,
+  .menu .menu-item a::before {
+    content: "";
+
+    transform: translate(0.5em, 0.5em);
+    position: absolute;
+    width: 0.5em;
+    height: 0.5em;
+
+    border-radius: 0.25em;
+
+    background-color: #e6e3bb;
+    opacity: 0;
+
+    transition: 0.25s;
+  }
+  .menu .menu-item a::before {
+    transform: translate(-1em, 0.5em);
+  }
+  .menu .menu-item a:hover {
+    color: #e6e3bb;
+  }
+  .menu .menu-item a:hover::after,
+  .menu .menu-item a:hover::before {
+    opacity: 1;
+  }
